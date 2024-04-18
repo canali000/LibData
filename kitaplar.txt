@@ -1,17 +1,4 @@
-kitap1
-
-	ISBN: 0
-	yazar: 0
-	yayın evi: 0
-	yayın yılı: 0
-	stok miktarı: 0
-	konum bilgisi: 0
-
-kitap2
-
-	ISBN: 0
-	yazar: 0
-	yayın evi: 0
-	yayın yılı: 0
-	stok miktarı: 0
-	konum bilgisi: 0
+kitap ismi,ISBN,yazar,yayınevi,yil,stok
+kitap1,1,1,1,1,1
+kitap2,2,2,2,2,2
+kitap3,3,3,3,3,3
