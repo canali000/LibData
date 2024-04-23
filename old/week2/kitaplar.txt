@@ -1,4 +1,4 @@
 kitap ismi,ISBN,yazar,yayınevi,yil,stok
 kitap1,1,1,1,1,1
-kitap3,3,3,3,3,3
 kitap2,2,2,2,2,2
+kitap3,3,3,3,3,3
