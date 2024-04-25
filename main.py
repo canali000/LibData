@@ -52,7 +52,7 @@ def kullaniciMenu():
     elif secim == "3":
         oduncAl(secim)        
     else:
-        adminMenu()
+        kullaniciMenu()
 
 # yetkilendirme
 
@@ -107,7 +107,7 @@ def kitapBul(search):
     index = 0
     for element in data:
         pack = element.split(",")
-        if pack[0].rstrip() == search:
+        if pack[0].lower().rstrip() == search:
             return index
         index += 1
 
@@ -134,7 +134,7 @@ def kitapEkle():
         kitap["yayinevi"] = yayinevi
         kitap["yil"] = yil
         kitap["stok"] = stok
-
+        
         enter = input("Tekrar kitap girmek için 'y' veya çıkmak için 'ENTER': ").lower().rstrip()
         print()
         if enter == "":
@@ -313,26 +313,40 @@ except FileNotFoundError:
     with open(file="kullanıcılar.txt", mode="a", encoding="utf-8") as checkFile:
         pass
 
-# Program Başlangıcı
+# Program
+
+def loopCheck():
+    print()
+    print("Ana menüye erişmek için 'ENTER'")
+    print("Çıkmak için 'n'")
+    loop = input("Seçim: ").lower().rstrip()
+    print()
+    if loop == "n":
+        return False 
+    return True
+
 while True:
     user = input("Kullanıcı adı gir: ").lower().rstrip()
     password = input("Şifreni gir: ").lower().rstrip()
 
     if adminCheck(user, password) == True:
-        adminMenu()
+        while loopCheck():
+            adminMenu()
         break
     elif adminCheck(user, password) == False:
-        kullaniciMenu()
+        while loopCheck():
+            kullaniciMenu()
         break
     else:
         print()
         print("Kullanıcı bulunamadı.")
-        print("Kayıt oluşturmak için '1'")
         print("Tekrar şifre girmek için 'ENTER'")
+        print("Kayıt oluşturmak için '1'")
         secim = input("Seçim: ").lower().rstrip()
         print()
 
         if secim == "1":
             kullaniciEkle()
-            kullaniciMenu()
+            while loopCheck():
+                kullaniciMenu()
             break

@@ -1,4 +1,11 @@
 kitap ismi,ISBN,yazar,yayınevi,yil,stok
-kitap1,1,1,1,1,1
-kitap3,3,3,3,3,3
-kitap2,2,2,2,2,2
+Intertwingled,978-3-319-16924-8,Douglas R. Dechow,Springer International Publishing,2015,10
+Elements of Robotics,978-3-319-62532-4,Mordechai Ben-Ari,Springer International Publishing,2018,10
+Cyber Security,978-981-13-6620-8,Xiaochun Yun,Springer Singapore,2019,10
+Market Engineering,978-3-030-66660-6,Henner Gimpel,Springer International Publishing,2021,10
+The Future Internet,978-3-642-38081-5,Alex Galis,Springer Berlin Heidelberg,2013,10
+Re-engineering the Uptake of ICT in Schools,978-3-319-19365-6,Frans Van Assche,Springer International Publishing,2015,10
+Natural Computing and Beyond,78-4-431-54393-0,Yasuhiro Suzuki,Springer International Publishing,2013,10
+Telecommunication Economics,978-3-642-30381-4,Antonis M. Hadjiantonis,Springer International Publishing,2012,10
+S-BPM Illustrated,978-3-642-36903-2,Albert Fleischmann,Springer International Publishing,2012,10
+Fundamental Approaches to Software Engineering,978-3-319-89362-4,Alessandra Russo,Springer International Publishing,2018,10
